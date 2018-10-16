@@ -4,6 +4,7 @@
 #                                    ______________________
 #                        julia runs:    4.032648725 times faster
 # ===============================================================================================
+using Random, Statistics
 
 function nonlin(x, deriv=false)
     deriv==true && return (x*(1-x))
